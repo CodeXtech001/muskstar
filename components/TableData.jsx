@@ -68,14 +68,14 @@ const generateRandomNumber = () => {
       status: getRandomStatus()
     };
 
-    // setData((prevData) => {
-    //   const updatedData = [ newRow,...prevData];
+    setData((prevData) => {
+      const updatedData = [ newRow,...prevData];
 
-    //   // Save to localStorage
-    //   localStorage.setItem("btctableData", JSON.stringify(updatedData));
+      // Save to localStorage
+      localStorage.setItem("btctableData", JSON.stringify(updatedData));
 
-    //   return updatedData;
-    // });
+      return updatedData;
+    });
 
     // Remove after 1min seconds
     setTimeout(() => {
